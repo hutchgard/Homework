@@ -1,0 +1,66 @@
+﻿Build started 4/17/2014 9:19:16 PM.
+     1>Project "C:\Users\Hutch\Documents\GitHub\Materials\Week2\WASAPI_Audio\WASAPI_Cpp\WASAPI_Cpp.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_arm\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Hutch\Documents\GitHub\Materials\Week2\WASAPI_Audio\ARM\Debug\WASAPI_Cpp\WASAPI_Cpp.dll" /INCREMENTAL /NOLOGO phoneaudioses.lib /NODEFAULTLIB:ole32.lib /NODEFAULTLIB:kernel32.lib /NODEFAULTLIB:ole32.lib /MANIFEST:NO /DEBUG /PDB:"C:\Users\Hutch\Documents\GitHub\Materials\Week2\WASAPI_Audio\ARM\Debug\WASAPI_Cpp\WASAPI_Cpp.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /WINMD /WINMDFILE:"C:\Users\Hutch\Documents\GitHub\Materials\Week2\WASAPI_Audio\ARM\Debug\WASAPI_Cpp\WASAPI_Cpp.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:ARM /DLL Debug\WASAPI_Cpp.obj
+         Debug\pch.obj
+            Creating library C:\Users\Hutch\Documents\GitHub\Materials\Week2\WASAPI_Audio\ARM\Debug\WASAPI_Cpp\WASAPI_Cpp.lib and object C:\Users\Hutch\Documents\GitHub\Materials\Week2\WASAPI_Audio\ARM\Debug\WASAPI_Cpp\WASAPI_Cpp.exp
+     1>WASAPI_Cpp.obj : error LNK2019: unresolved external symbol __Platform_CoCreateFreeThreadedMarshaler referenced in function "public: long __cdecl __abi_FTMWeakRefData::__abi_QueryInterface(class Platform::Guid &,void * *)" (?__abi_QueryInterface@__abi_FTMWeakRefData@@QAAJAAVGuid@Platform@@PAPAX@Z)
+     1>pch.obj : error LNK2001: unresolved external symbol __Platform_CoCreateFreeThreadedMarshaler
+     1>vccorlibd.lib(__Platform_CoCreateFreeThreadedMarshaler.obj) : error LNK2001: unresolved external symbol __Platform_CoCreateFreeThreadedMarshaler
+     1>WASAPI_Cpp.obj : error LNK2019: unresolved external symbol __imp_WaitForSingleObjectEx referenced in function __unwind$13
+     1>WASAPI_Cpp.obj : error LNK2019: unresolved external symbol __imp_CreateEventExW referenced in function __unwind$13
+     1>pch.obj : error LNK2019: unresolved external symbol __Platform_CoTaskMemAlloc referenced in function "protected: static unsigned char * __cdecl Platform::WriteOnlyArray<unsigned char,1>::AllocateAndZeroInitialize(unsigned int)" (?AllocateAndZeroInitialize@?$WriteOnlyArray@E$00@Platform@@KAPAEI@Z)
+     1>vccorlibd.lib(__Platform_CoTaskMemAlloc.obj) : error LNK2001: unresolved external symbol __Platform_CoTaskMemAlloc
+     1>pch.obj : error LNK2019: unresolved external symbol __Platform_CoTaskMemFree referenced in function "public: static void __cdecl Platform::Details::array_helper<unsigned char,0>::DestructElementsAndFree(unsigned char *,unsigned int)" (?DestructElementsAndFree@?$array_helper@E$0A@@Details@Platform@@SAXPAEI@Z)
+     1>vccorlibd.lib(__Platform_CoTaskMemFree.obj) : error LNK2001: unresolved external symbol __Platform_CoTaskMemFree
+     1>vccorlibd.lib(dllexports.obj) : error LNK2019: unresolved external symbol __imp_CoCreateFreeThreadedMarshaler referenced in function "public: static void __cdecl Platform::Details::array_helper<unsigned char,0>::DestructElementsAndFree(unsigned char *,unsigned int)" (?DestructElementsAndFree@?$array_helper@E$0A@@Details@Platform@@SAXPAEI@Z)
+     1>vccorlibd.lib(compiler.obj) : error LNK2001: unresolved external symbol __imp_CoCreateFreeThreadedMarshaler
+     1>vccorlibd.lib(activation.obj) : error LNK2001: unresolved external symbol __imp_CoCreateFreeThreadedMarshaler
+     1>vccorlibd.lib(init.obj) : error LNK2001: unresolved external symbol __imp_CoCreateFreeThreadedMarshaler
+     1>vccorlibd.lib(tmdefault.obj) : error LNK2001: unresolved external symbol __imp_CoCreateFreeThreadedMarshaler
+     1>vccorlibd.lib(dllexports.obj) : error LNK2019: unresolved external symbol __imp_CoTaskMemAlloc referenced in function "void __cdecl Platform::Details::CreateString(wchar_t const *,unsigned int,struct HSTRING__ * *)" (?CreateString@Details@Platform@@YAXPB_WIPAPAUHSTRING__@@@Z)
+     1>vccorlibd.lib(compiler.obj) : error LNK2001: unresolved external symbol __imp_CoTaskMemAlloc
+     1>vccorlibd.lib(activation.obj) : error LNK2001: unresolved external symbol __imp_CoTaskMemAlloc
+     1>vccorlibd.lib(init.obj) : error LNK2001: unresolved external symbol __imp_CoTaskMemAlloc
+     1>vccorlibd.lib(tmdefault.obj) : error LNK2001: unresolved external symbol __imp_CoTaskMemAlloc
+     1>vccorlibd.lib(dllexports.obj) : error LNK2019: unresolved external symbol __imp_CoTaskMemFree referenced in function "void __cdecl __abi_details::__abi_delete_String(class Platform::String ^)" (?__abi_delete_String@__abi_details@@YAXP$AAVString@Platform@@@Z)
+     1>vccorlibd.lib(compiler.obj) : error LNK2001: unresolved external symbol __imp_CoTaskMemFree
+     1>vccorlibd.lib(activation.obj) : error LNK2001: unresolved external symbol __imp_CoTaskMemFree
+     1>vccorlibd.lib(init.obj) : error LNK2001: unresolved external symbol __imp_CoTaskMemFree
+     1>vccorlibd.lib(tmdefault.obj) : error LNK2001: unresolved external symbol __imp_CoTaskMemFree
+     1>vccorlibd.lib(__Platform_CoCreateFreeThreadedMarshaler.obj) : error LNK2001: unresolved external symbol CoCreateFreeThreadedMarshaler
+     1>vccorlibd.lib(init.obj) : error LNK2019: unresolved external symbol __imp_DecodePointer referenced in function "bool __cdecl Microsoft::WRL::Details::TerminateMap(class Microsoft::WRL::Details::ModuleBase *,wchar_t const *,bool)" (?TerminateMap@Details@WRL@Microsoft@@YA_NPAVModuleBase@123@PB_W_N@Z)
+     1>MSVCRTD.lib(crtdll.obj) : error LNK2001: unresolved external symbol __imp_DecodePointer
+     1>MSVCRTD.lib(atonexit.obj) : error LNK2001: unresolved external symbol __imp_DecodePointer
+     1>vccorlibd.lib(init.obj) : error LNK2019: unresolved external symbol __imp_ReleaseSRWLockExclusive referenced in function "public: static void __cdecl Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits::Unlock(struct _RTL_SRWLOCK *)" (?Unlock@SRWLockExclusiveTraits@HandleTraits@Wrappers@WRL@Microsoft@@SAXPAU_RTL_SRWLOCK@@@Z)
+     1>vccorlibd.lib(init.obj) : error LNK2019: unresolved external symbol __imp_AcquireSRWLockExclusive referenced in function "public: static class Microsoft::WRL::Wrappers::Details::SyncLockT<struct Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits> __cdecl Microsoft::WRL::Wrappers::SRWLock::LockExclusive(struct _RTL_SRWLOCK *)" (?LockExclusive@SRWLock@Wrappers@WRL@Microsoft@@SA?AV?$SyncLockT@USRWLockExclusiveTraits@HandleTraits@Wrappers@WRL@Microsoft@@@Details@234@PAU_RTL_SRWLOCK@@@Z)
+     1>vccorlibd.lib(__Platform_CoTaskMemAlloc.obj) : error LNK2001: unresolved external symbol CoTaskMemAlloc
+     1>vccorlibd.lib(__Platform_CoTaskMemFree.obj) : error LNK2001: unresolved external symbol CoTaskMemFree
+     1>MSVCRTD.lib(crtdll.obj) : error LNK2019: unresolved external symbol __imp_EncodePointer referenced in function pre_c_init
+     1>MSVCRTD.lib(atonexit.obj) : error LNK2001: unresolved external symbol __imp_EncodePointer
+     1>MSVCRTD.lib(error.obj) : error LNK2019: unresolved external symbol __imp_IsDebuggerPresent referenced in function "void __cdecl failwithmessage(void *,int,int,char const *)" (?failwithmessage@@YAXPAXHHPBD@Z)
+     1>MSVCRTD.lib(error.obj) : error LNK2019: unresolved external symbol __imp_RaiseException referenced in function "int __cdecl DebuggerProbe(unsigned long)" (?DebuggerProbe@@YAHK@Z)
+     1>MSVCRTD.lib(error.obj) : error LNK2019: unresolved external symbol __imp_MultiByteToWideChar referenced in function "void __cdecl failwithmessage(void *,int,int,char const *)" (?failwithmessage@@YAXPAXHHPBD@Z)
+     1>MSVCRTD.lib(error.obj) : error LNK2019: unresolved external symbol __imp_WideCharToMultiByte referenced in function "void __cdecl failwithmessage(void *,int,int,char const *)" (?failwithmessage@@YAXPAXHHPBD@Z)
+     1>MSVCRTD.lib(gs_support.obj) : error LNK2019: unresolved external symbol __imp_QueryPerformanceCounter referenced in function __security_init_cookie
+     1>MSVCRTD.lib(gs_support.obj) : error LNK2019: unresolved external symbol __imp_GetCurrentProcessId referenced in function __security_init_cookie
+     1>MSVCRTD.lib(gs_support.obj) : error LNK2019: unresolved external symbol __imp_GetCurrentThreadId referenced in function __security_init_cookie
+     1>MSVCRTD.lib(gs_support.obj) : error LNK2019: unresolved external symbol __imp_GetSystemTimeAsFileTime referenced in function __security_init_cookie
+     1>MSVCRTD.lib(gs_support.obj) : error LNK2019: unresolved external symbol __imp_GetTickCount64 referenced in function __security_init_cookie
+     1>MSVCRTD.lib(dllmain.obj) : error LNK2019: unresolved external symbol __imp_DisableThreadLibraryCalls referenced in function DllMain
+     1>MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __imp_GetLastError referenced in function "struct HINSTANCE__ * __cdecl GetPdbDllFromInstallPath(void)" (?GetPdbDllFromInstallPath@@YAPAUHINSTANCE__@@XZ)
+     1>MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __imp_HeapAlloc referenced in function "int __cdecl _RTC_GetSrcLine(unsigned char *,wchar_t *,unsigned long,int *,wchar_t *,unsigned long)" (?_RTC_GetSrcLine@@YAHPAEPA_WKPAH1K@Z)
+     1>MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __imp_HeapFree referenced in function "int __cdecl _RTC_GetSrcLine(unsigned char *,wchar_t *,unsigned long,int *,wchar_t *,unsigned long)" (?_RTC_GetSrcLine@@YAHPAEPA_WKPAH1K@Z)
+     1>MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __imp_GetProcessHeap referenced in function "int __cdecl _RTC_GetSrcLine(unsigned char *,wchar_t *,unsigned long,int *,wchar_t *,unsigned long)" (?_RTC_GetSrcLine@@YAHPAEPA_WKPAH1K@Z)
+     1>MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __imp_VirtualQuery referenced in function "int __cdecl _RTC_GetSrcLine(unsigned char *,wchar_t *,unsigned long,int *,wchar_t *,unsigned long)" (?_RTC_GetSrcLine@@YAHPAEPA_WKPAH1K@Z)
+     1>MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __imp_FreeLibrary referenced in function "struct HINSTANCE__ * __cdecl GetPdbDllFromInstallPath(void)" (?GetPdbDllFromInstallPath@@YAPAUHINSTANCE__@@XZ)
+     1>MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __imp_GetModuleFileNameW referenced in function "struct HINSTANCE__ * __cdecl GetPdbDll(void)" (?GetPdbDll@@YAPAUHINSTANCE__@@XZ)
+     1>MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __imp_GetModuleHandleW referenced in function "struct HINSTANCE__ * __cdecl GetPdbDll(void)" (?GetPdbDll@@YAPAUHINSTANCE__@@XZ)
+     1>MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __imp_GetProcAddress referenced in function "struct HINSTANCE__ * __cdecl GetPdbDllFromInstallPath(void)" (?GetPdbDllFromInstallPath@@YAPAUHINSTANCE__@@XZ)
+     1>MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __imp_LoadLibraryExW referenced in function "struct HINSTANCE__ * __cdecl GetPdbDll(void)" (?GetPdbDll@@YAPAUHINSTANCE__@@XZ)
+     1>C:\Users\Hutch\Documents\GitHub\Materials\Week2\WASAPI_Audio\ARM\Debug\WASAPI_Cpp\WASAPI_Cpp.dll : fatal error LNK1120: 35 unresolved externals
+     1>Done Building Project "C:\Users\Hutch\Documents\GitHub\Materials\Week2\WASAPI_Audio\WASAPI_Cpp\WASAPI_Cpp.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.40

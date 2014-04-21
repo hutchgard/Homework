@@ -1,0 +1,8 @@
+﻿Build started 4/17/2014 8:31:25 PM.
+     1>Project "C:\Users\Hutch\Documents\GitHub\Materials\Week2\WASAPI_Audio\WASAPI_Cpp\WASAPI_Cpp.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.Platform.targets(64,5): error MSB8020: The build tools for v110_wp80 (Platform Toolset = 'v110_wp80') cannot be found. To build using the v110_wp80 build tools, please install v110_wp80 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Upgrade Solution...".
+     1>Done Building Project "C:\Users\Hutch\Documents\GitHub\Materials\Week2\WASAPI_Audio\WASAPI_Cpp\WASAPI_Cpp.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.03
