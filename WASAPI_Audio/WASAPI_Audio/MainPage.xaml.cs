@@ -23,7 +23,7 @@ namespace WASAPI_Audio
         public MainPage()
         {
             InitializeComponent();
-
+            AudioLoop.Init_Capture();
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
         }

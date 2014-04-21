@@ -1,8 +1,8 @@
 ﻿// WASAPI_CPP2.cpp
 #include "pch.h"
 #include "WASAPI_Cpp2.h"
-#include <audioclient.h>
-#include <phoneaudioclient.h>
+//#include <audioclient.h>
+//#include <phoneaudioclient.h>
 
 using namespace WASAPI_Cpp2;
 using namespace Platform;
@@ -126,7 +126,7 @@ void MyFillPcmFormat(WAVEFORMATEX& format, WORD channels, int sampleRate, WORD b
 }
 
 
-HRESULT WASAPI::Init_Capture()
+void WASAPI::Init_Capture()
 {
 	//HRESULT hr = E_FAIL;
 
@@ -226,7 +226,7 @@ HRESULT WASAPI::Init_Capture()
 	//	hr = inputDevice->SetEventHandle(audioInEvent);
 	//}
 
-	return hr;
+	//return hr;
 }
 
 HRESULT WASAPI::Init_Render()

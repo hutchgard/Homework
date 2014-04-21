@@ -22,10 +22,10 @@ namespace WASAPI_Cpp2
 		void stopThread();
 		// This is the function that gets run in a new thread
 		void thread(IAsyncAction^ operation);
-		
+		void Init_Capture();
 
 	private:
-		HRESULT Init_Capture();
+		
 		HRESULT Init_Render();
 
 

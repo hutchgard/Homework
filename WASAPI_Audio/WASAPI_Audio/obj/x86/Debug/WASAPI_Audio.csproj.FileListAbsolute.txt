@@ -20,3 +20,25 @@ C:\Users\Hutch\Documents\Visual Studio 2013\Projects\WASAPI_Audio\WASAPI_Audio\o
 C:\Users\Hutch\Documents\Visual Studio 2013\Projects\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\WASAPI_Audio.dll
 C:\Users\Hutch\Documents\Visual Studio 2013\Projects\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\WASAPI_Audio.pdb
 C:\Users\Hutch\Documents\Visual Studio 2013\Projects\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\XapCacheFile.xml
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Assets\ApplicationIcon.png
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\WASAPI_Audio.dll
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\WASAPI_Audio.pdb
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\AppManifest.xaml
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Properties\WMAppManifest.xml
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\WASAPI_Audio_Debug_x86.xap
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\WASAPI_CPP2.winmd
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\WASAPI_CPP2.pdb
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\WASAPI_Audio.csprojResolveAssemblyReference.cache
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\App.g.cs
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\MainPage.g.cs
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\WASAPI_Audio.g.resources
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\WASAPI_Audio.Resources.AppResources.resources
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\WASAPI_Audio.csproj.GenerateResource.Cache
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\WASAPI_Audio.dll
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\WASAPI_Audio.pdb
+C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\XapCacheFile.xml
