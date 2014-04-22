@@ -1,14 +1,14 @@
-﻿<xapCache source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\WASAPI_Audio_Debug_x86.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="4/20/2014 9:52:00 PM">
-  <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\WASAPI_Audio.dll" archivePath="WASAPI_Audio.dll" lastWriteTime="4/20/2014 9:51:57 PM" />
+﻿<xapCache source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\WASAPI_Audio_Debug_x86.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="4/21/2014 7:56:09 PM">
+  <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\obj\x86\Debug\WASAPI_Audio.dll" archivePath="WASAPI_Audio.dll" lastWriteTime="4/21/2014 7:56:03 PM" />
   <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="4/20/2014 8:37:27 PM" />
   <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="4/20/2014 8:37:27 PM" />
   <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="4/20/2014 8:37:27 PM" />
   <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="4/20/2014 8:37:27 PM" />
   <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="4/20/2014 8:37:27 PM" />
-  <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="4/20/2014 9:51:39 PM" />
+  <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="4/21/2014 7:56:03 PM" />
   <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="4/20/2014 8:37:27 PM" />
   <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="4/20/2014 8:37:27 PM" />
-  <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\Debug\WASAPI_CPP2\WASAPI_CPP2.winmd" archivePath="WASAPI_CPP2.winmd" lastWriteTime="4/20/2014 9:51:36 PM" />
-  <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\Debug\WASAPI_CPP2\WASAPI_CPP2.dll" archivePath="WASAPI_CPP2.dll" lastWriteTime="4/20/2014 9:51:36 PM" />
-  <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="4/20/2014 9:51:41 PM" />
+  <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\Debug\WASAPI_CPP2\WASAPI_CPP2.winmd" archivePath="WASAPI_CPP2.winmd" lastWriteTime="4/21/2014 7:56:00 PM" />
+  <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\Debug\WASAPI_CPP2\WASAPI_CPP2.dll" archivePath="WASAPI_CPP2.dll" lastWriteTime="4/21/2014 7:56:01 PM" />
+  <file source="C:\Users\hutch1\Documents\GitHub\Homework\WASAPI_Audio\WASAPI_Audio\Bin\x86\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="4/21/2014 7:56:09 PM" />
 </xapCache>

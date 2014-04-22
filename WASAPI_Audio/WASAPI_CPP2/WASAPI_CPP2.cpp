@@ -48,11 +48,12 @@ void WASAPI::startThread()
 	// Only start a new thread if we don't already have one running
 	if (this->threadHandle == nullptr)
 	{
+		
 		Init_Capture();
 		Init_Render();
 		this->threadHandle = ThreadPool::RunAsync(ref new WorkItemHandler(this, &WASAPI::thread));
-		//inputDevice->Start();
-		//outputDevice->Start();
+		inputDevice->Start();
+		outputDevice->Start();
 
 	}
 }
@@ -65,6 +66,7 @@ void WASAPI::stopThread()
 		this->threadHandle->Cancel();
 		inputDevice->Stop();
 		outputDevice->Stop();
+		//release input and output device
 	}
 
 }
@@ -126,107 +128,58 @@ void MyFillPcmFormat(WAVEFORMATEX& format, WORD channels, int sampleRate, WORD b
 }
 
 
-void WASAPI::Init_Capture()
+HRESULT WASAPI::Init_Capture()
 {
-	//HRESULT hr = E_FAIL;
-
-	//// returns the interface id for the specified role
-	//LPCWSTR deviceID = GetDefaultAudioCaptureId(AudioDeviceRole::Default);
-	//auto classID = __uuidof(IAudioClient2);
-
-	//if (NULL == deviceID)
-	//{
-	//	hr = E_FAIL;
-	//}
-	//else
-	//{
-	//	// Finds audio endpoint based on deviceID
-	//	hr = ActivateAudioInterface(deviceID, classID, (void **)&inputDevice);
-	//}
-
-	//if (SUCCEEDED(hr))
-	//{
-	//	// Writes the address of the mix format
-	//	hr = inputDevice->GetMixFormat(&inputFormat);
-	//}
-
 	HRESULT hr = E_FAIL;
 
-	LPCWSTR captureId = GetDefaultAudioCaptureId(AudioDeviceRole::Default);
+	// returns the interface id for the specified role
+	LPCWSTR deviceID = GetDefaultAudioCaptureId(AudioDeviceRole::Default);
+	auto classID = __uuidof(IAudioClient2);
 
-	if (NULL == captureId)
+	if (NULL == deviceID)
 	{
 		hr = E_FAIL;
 	}
 	else
 	{
-		hr = ActivateAudioInterface(captureId, __uuidof(IAudioClient2), (void**)&m_pDefaultCaptureDevice);
+		// Finds audio endpoint based on deviceID
+		hr = ActivateAudioInterface(deviceID, classID, (void **)&inputDevice);
 	}
 
 	if (SUCCEEDED(hr))
 	{
-		hr = m_pDefaultCaptureDevice->GetMixFormat(&m_waveFormatEx);
+		// Writes the address of the mix format
+		hr = inputDevice->GetMixFormat(&inputFormat);
 	}
 
-	// Set the category through SetClientProperties
-	AudioClientProperties properties = {};
+	
 	if (SUCCEEDED(hr))
 	{
-		properties.cbSize = sizeof AudioClientProperties;
-		properties.eCategory = AudioCategory_Other;
-		// Note that AudioCategory_Other is the only valid category for capture and loopback streams.
-		// From: http://msdn.microsoft.com/en-us/library/windows/desktop/hh404178(v=vs.85).aspx
-		hr = m_pDefaultCaptureDevice->SetClientProperties(&properties);
-	}
+		// enable event driven handling of audio stream
+		auto flags = AUDCLNT_STREAMFLAGS_EVENTCALLBACK;
 
-	if (SUCCEEDED(hr))
-	{
-		WAVEFORMATEX temp;
-		MyFillPcmFormat(temp, 2, 44100, 16); // stereo, 44100 Hz, 16 bit
+		// enable sharing of audio endpoint device with clients in other processes
+		auto mode = AUDCLNT_SHAREMODE_SHARED;
 
-		*m_waveFormatEx = temp;
-		m_sourceFrameSizeInBytes = (m_waveFormatEx->wBitsPerSample / 8) * m_waveFormatEx->nChannels;
-
-		// using device to capture stereo requires the flag 0x8800000, or at least some part of it
-		hr = m_pDefaultCaptureDevice->Initialize(AUDCLNT_SHAREMODE_SHARED, 0x88000000, 1000 * 10000, 0, m_waveFormatEx, NULL);
+		// Initialize input device
+		hr = inputDevice->Initialize(mode, flags, 0, 0, inputFormat, NULL);
 	}
 
 	if (SUCCEEDED(hr))
 	{
-		hr = m_pDefaultCaptureDevice->GetService(__uuidof(IAudioCaptureClient), (void**)&m_pCaptureClient);
+		// writes address of requested interface
+		//classID = __uuidof(IAudioCaptureClient);
+		hr = inputDevice->GetService(__uuidof(IAudioCaptureClient), (void**)&inputClient);
 	}
 
 	if (SUCCEEDED(hr))
 	{
-		hr = m_pDefaultCaptureDevice->Start();
+		// create and set the event handler which is called when the input buffer is ready for processing
+		audioInEvent = CreateEventEx(NULL, NULL, 0, EVENT_ALL_ACCESS);
+		hr = inputDevice->SetEventHandle(audioInEvent);
 	}
-	//if (SUCCEEDED(hr))
-	//{
-	//	// enable event driven handling of audio stream
-	//	auto flags = AUDCLNT_STREAMFLAGS_EVENTCALLBACK;
 
-	//	// enable sharing of audio endpoint device with clients in other processes
-	//	auto mode = AUDCLNT_SHAREMODE_SHARED;
-
-	//	// Initialize input device
-	//	hr = inputDevice->Initialize(mode, flags, 0, 0, inputFormat, NULL);
-	//}
-
-	//if (SUCCEEDED(hr))
-	//{
-	//	// writes address of requested interface
-	//	//classID = __uuidof(IAudioCaptureClient);
-	//	hr = inputDevice->GetService(__uuidof(IAudioCaptureClient), (void**)&inputClient);
-	//}
-
-	//if (SUCCEEDED(hr))
-	//{
-	//	// create and set the event handler which is called when the input buffer is ready for processing
-	//	audioInEvent = CreateEventEx(NULL, NULL, 0, EVENT_ALL_ACCESS);
-	//	hr = inputDevice->SetEventHandle(audioInEvent);
-	//}
-
-	//return hr;
+	return hr;
 }
 
 HRESULT WASAPI::Init_Render()

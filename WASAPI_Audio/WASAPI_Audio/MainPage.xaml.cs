@@ -23,15 +23,11 @@ namespace WASAPI_Audio
         public MainPage()
         {
             InitializeComponent();
-            AudioLoop.Init_Capture();
-            // Sample code to localize the ApplicationBar
-            //BuildLocalizedApplicationBar();
         }
 
         private void StartAudio_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             AudioLoop.startThread();
-            //if (AudioLoop.)
             this.Output.Text = "Thread Started";
         }
 
